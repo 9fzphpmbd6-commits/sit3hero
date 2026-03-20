@@ -20,7 +20,7 @@ export default function Home() {
     <main>
       {/* -- AWARD BANNER -- */}
       <div className="bg-s3h-navy text-s3h-cream text-center py-2.5 px-4 text-sm font-sans font-medium tracking-wide">
-        \uD83C\uDFC6 {siteConfig.award}
+        🏆 {siteConfig.award}
       </div>
 
       {/* -- HERO -- */}
@@ -47,7 +47,7 @@ export default function Home() {
                 <span className="text-s3h-green-light">Lifting</span>
               </h1>
               <p className="text-lg text-s3h-cream/80 mb-8 max-w-lg font-sans">
-                Drill new holes, expand, thread, and align \u2014 all from your 1/2" or 3/4" impact wrench.{" "}
+                Drill new holes, expand, thread, and align — all from your 1/2" or 3/4" impact wrench.{" "}
                 <strong className="text-s3h-white">Connect. Click. GO.</strong>
               </p>
               <div className="flex flex-wrap gap-4">
@@ -89,22 +89,22 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: "\uD83D\uDD29",
+                icon: "🔩",
                 title: "New Holes",
                 desc: "Drill new holes in thin gauge material from 1/8\" to 1-3/8\" with Step Drills and Step Reamers.",
               },
               {
-                icon: "\u2B55",
+                icon: "⭕",
                 title: "Expand Holes",
                 desc: "Expand and clean out existing holes across all major bolt sizes.",
               },
               {
-                icon: "\uD83D\uDD27",
+                icon: "🔧",
                 title: "Thread Holes",
-                desc: "Cut threads up to 20\u00d7 faster than hand tapping. 8 UNC sizes in material up to 1/2\" thick.",
+                desc: "Cut threads up to 20× faster than hand tapping. 8 UNC sizes in material up to 1/2\" thick.",
               },
               {
-                icon: "\uD83C\uDFAF",
+                icon: "🎯",
                 title: "Align Holes",
                 desc: "Align mismatched bolt holes on site quickly and safely. 13 major diameter sizes.",
               },
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="section-label text-s3h-green-light text-center">The Range</p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-s3h-green-dark text-center mb-10">
-            SIT3HERO\u2122 Products
+            SIT3HERO™ Products
           </h2>
 
           {/* Category filter */}
@@ -187,19 +187,19 @@ export default function Home() {
               {
                 step: "1",
                 title: "Connect",
-                desc: 'Attach the SIT3HERO\u2122 holder to your 1/2" or 3/4" impact wrench. Quick-release mechanism locks on in seconds.',
+                desc: 'Attach the SIT3HERO™ holder to your 1/2" or 3/4" impact wrench. Quick-release mechanism locks on in seconds.',
                 icon: <Zap className="w-8 h-8" />,
               },
               {
                 step: "2",
                 title: "Click",
-                desc: "Pull, insert your chosen cutting tool \u2014 step drill, reamer, or tap \u2014 and lock it into the holder.",
+                desc: "Pull, insert your chosen cutting tool — step drill, reamer, or tap — and lock it into the holder.",
                 icon: <Shield className="w-8 h-8" />,
               },
               {
                 step: "3",
                 title: "GO",
-                desc: "Start drilling, expanding, threading, or aligning. Smooth, easy cut with the SIT3HERO\u2122 high-performance coating.",
+                desc: "Start drilling, expanding, threading, or aligning. Smooth, easy cut with the SIT3HERO™ high-performance coating.",
                 icon: <Layers className="w-8 h-8" />,
               },
             ].map((item) => (
@@ -247,14 +247,14 @@ export default function Home() {
             {[
               {
                 title: "75% Longer Tool Life",
-                desc: "The proprietary SIT3HERO\u2122 coating is high-temperature tested to 356\u00b0F, giving you dramatically extended tool life compared to standard alternatives.",
+                desc: "The proprietary SIT3HERO™ coating is high-temperature tested to 356°F, giving you dramatically extended tool life compared to standard alternatives.",
               },
               {
                 title: "Impact Wrench Powered",
-                desc: 'No more switching tools on site. The SIT3HERO\u2122 system works with your existing 1/2" or 3/4" impact wrench \u2014 the tool already in your hand.',
+                desc: 'No more switching tools on site. The SIT3HERO™ system works with your existing 1/2" or 3/4" impact wrench — the tool already in your hand.',
               },
               {
-                title: "20\u00d7 Faster Threading",
+                title: "20× Faster Threading",
                 desc: 'Thread holes up to 20 times faster than hand tapping. The spiral point machine taps are a one-tap solution for holes from 1/4" to 1" UNC.',
               },
               {
@@ -267,7 +267,7 @@ export default function Home() {
               },
               {
                 title: "Patent Pending",
-                desc: "International patent pending (WO2024/100390). The SIT3HERO\u2122 holder is a genuinely new innovation \u2014 not available from anyone else.",
+                desc: "International patent pending (WO2024/100390). The SIT3HERO™ holder is a genuinely new innovation — not available from anyone else.",
               },
             ].map((f) => (
               <div key={f.title} className="p-6 rounded-lg bg-s3h-cream">
@@ -288,7 +288,7 @@ export default function Home() {
             Got Questions? We've Got Answers.
           </h2>
           <p className="text-s3h-cream/80 font-sans mb-8">
-            Our team is ready to help you find the right SIT3HERO\u2122 tools for the job.
+            Our team is ready to help you find the right SIT3HERO™ tools for the job.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
