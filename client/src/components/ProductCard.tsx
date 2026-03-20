@@ -9,16 +9,16 @@ export default function ProductCard({ product }: Props) {
   const { addItem } = useCart();
 
   return (
-    <div className="card-tool flex flex-col bg-white dark:bg-texas-brown/20 border border-texas-cream/20 group">
+    <div className="card-tool flex flex-col bg-white dark:bg-s3h-green-mid/20 border border-s3h-cream/20 group">
       {/* Image */}
-      <div className="relative aspect-square bg-gradient-to-br from-texas-brown/10 to-texas-brown/30 flex items-center justify-center overflow-hidden">
+      <div className="relative aspect-square bg-gradient-to-br from-s3h-green-mid/10 to-s3h-green-mid/30 flex items-center justify-center overflow-hidden">
         {product.badge && (
-          <span className="absolute top-3 left-3 bg-texas-orange text-texas-cream text-xs font-display font-semibold px-2.5 py-1 rounded uppercase tracking-wider z-10">
+          <span className="absolute top-3 left-3 bg-s3h-navy text-s3h-white text-xs font-display font-semibold px-2.5 py-1 rounded uppercase tracking-wider z-10">
             {product.badge}
           </span>
         )}
         {product.isBestSeller && !product.badge && (
-          <span className="absolute top-3 left-3 bg-texas-gold text-texas-dark text-xs font-display font-semibold px-2.5 py-1 rounded uppercase tracking-wider z-10">
+          <span className="absolute top-3 left-3 bg-s3h-gold text-s3h-green-dark text-xs font-display font-semibold px-2.5 py-1 rounded uppercase tracking-wider z-10">
             Best Seller
           </span>
         )}
@@ -34,10 +34,10 @@ export default function ProductCard({ product }: Props) {
           }}
         />
         {/* Placeholder shown when image missing */}
-        <div className="absolute inset-0 flex items-center justify-center text-texas-brown/40">
+        <div className="absolute inset-0 flex items-center justify-center text-s3h-green-mid/40">
           <div className="text-center p-4">
-            <div className="text-4xl mb-2">🔧</div>
-            <p className="text-xs font-sans text-texas-brown/50 leading-tight">
+            <div className="text-4xl mb-2">/</div>
+            <p className="text-xs font-sans text-s3h-green-mid/50 leading-tight">
               {product.name}
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function ProductCard({ product }: Props) {
 
       {/* Info */}
       <div className="flex flex-col flex-1 p-5">
-        <p className="text-xs text-texas-orange/70 font-mono uppercase tracking-widest mb-1">
+        <p className="text-xs text-s3h-green-light/70 font-mono uppercase tracking-widest mb-1">
           {product.sku}
         </p>
         <h3 className="font-display font-semibold text-foreground text-base leading-snug mb-2">
@@ -58,7 +58,7 @@ export default function ProductCard({ product }: Props) {
 
         <div className="flex items-center justify-between mt-5 pt-4 border-t border-border">
           <div>
-            <span className="font-display font-bold text-texas-orange text-xl">
+            <span className="font-display font-bold text-s3h-green-light text-xl">
               {formatPrice(product.price)}
             </span>
             {product.compareAtPrice && (
@@ -67,14 +67,14 @@ export default function ProductCard({ product }: Props) {
               </span>
             )}
           </div>
-          <button
-            onClick={() => addItem(product)}
-            className="flex items-center gap-2 bg-texas-orange text-texas-cream text-sm font-display font-semibold px-4 py-2 rounded transition-all hover:brightness-110 hover:shadow-md active:scale-95"
-          >
-            <ShoppingCart size={14} />
-            Add
-          </button>
         </div>
+        <button
+          onClick={() => addItem(product)}
+          className="flex items-center gap-2 bg-s3h-navy text-s3h-white text-sm font-display font-semibold px-4 py-2 rounded transition-all hover:brightness-110 hover:shadow-md active:scale-95 mt-3"
+        >
+          <ShoppingCart size={14} />
+          Add
+        </button>
       </div>
     </div>
   );
