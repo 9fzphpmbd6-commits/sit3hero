@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "SIT3HERO™",
-  tagline: "Turn Your Impact Wrench Into a Metalworking Powerhouse",
+  tagline: "Make Your Impact Wrench Do the Heavy Lifting",
   description:
     "Drill new holes, expand, thread, and align — all from your 1/2\" or 3/4\" impact wrench. Connect. Click. GO.",
   domain: "sit3hero.com",
@@ -17,8 +17,8 @@ export const siteConfig = {
   },
   shipping: {
     freeThreshold: 150,
-    processingDays: "1–2 business days",
-    deliveryDays: "3–7 business days",
+    processingDays: "1-2 business days",
+    deliveryDays: "3-7 business days",
   },
   award: "PTIA 2025 Tool Innovation Award Winner",
   stats: [
@@ -27,4 +27,5 @@ export const siteConfig = {
     { value: "38+", label: "SKUs Available" },
   ],
   stripePublishableKey: "pk_live_YOUR_KEY_HERE",
+  snipcartApiKey: "MTM0YjE1MGYtY2FmZC00NTRiLTgxNDMtY2JmYmMzNzczMzI1NjM5MDkzNTE3MTIxNTU1MzMw",
 };
