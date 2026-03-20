@@ -40,14 +40,15 @@ export default {
           foreground: "hsl(var(--destructive-foreground) / <alpha-value>)",
         },
         ring: "hsl(var(--ring) / <alpha-value>)",
-        // Texas brand colors
-        "texas-orange": "#C84B11",
-        "texas-red": "#8B1A1A",
-        "texas-cream": "#F5EDD6",
-        "texas-dark": "#1A1208",
-        "texas-brown": "#3D2B1F",
-        "texas-gold": "#D4900A",
-        "texas-steel": "#4A5568",
+        // SIT3HERO brand colors (flipped scheme)
+        "s3h-navy": "#0F2A4A",
+        "s3h-green-dark": "#0B3D2E",
+        "s3h-green-mid": "#145A3E",
+        "s3h-green-light": "#22C55E",
+        "s3h-white": "#F0F7F4",
+        "s3h-cream": "#E8F5E9",
+        "s3h-gold": "#D4A017",
+        "s3h-steel": "#4A6572",
       },
       fontFamily: {
         sans: ["'Barlow'", "'Inter'", "sans-serif"],
