@@ -19,15 +19,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-texas-dark border-b border-texas-brown/40 shadow-lg">
+    <header className="sticky top-0 z-50 bg-s3h-green-dark border-b border-s3h-green-mid/40 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-texas-orange rounded flex items-center justify-center">
-              <span className="font-display font-bold text-texas-cream text-xs tracking-tight">S3H</span>
+            <div className="w-9 h-9 bg-s3h-green-light rounded flex items-center justify-center">
+              <span className="font-display font-bold text-s3h-green-dark text-xs tracking-tight">S3H</span>
             </div>
-            <span className="font-display font-bold text-texas-cream text-xl tracking-wider group-hover:text-texas-orange transition-colors">
+            <span className="font-display font-bold text-s3h-white text-xl tracking-wider group-hover:text-s3h-green-light transition-colors">
               {siteConfig.name}
             </span>
           </Link>
@@ -39,7 +39,7 @@ export default function Header() {
                 <Link
                   key={link.label}
                   to={link.href}
-                  className="px-4 py-2 text-sm font-sans font-medium text-texas-cream/80 hover:text-texas-orange transition-colors uppercase tracking-wider"
+                  className="px-4 py-2 text-sm font-sans font-medium text-s3h-cream/80 hover:text-s3h-green-light transition-colors uppercase tracking-wider"
                 >
                   {link.label}
                 </Link>
@@ -47,7 +47,7 @@ export default function Header() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-sans font-medium text-texas-cream/80 hover:text-texas-orange transition-colors uppercase tracking-wider"
+                  className="px-4 py-2 text-sm font-sans font-medium text-s3h-cream/80 hover:text-s3h-green-light transition-colors uppercase tracking-wider"
                 >
                   {link.label}
                 </a>
@@ -55,24 +55,22 @@ export default function Header() {
             )}
           </nav>
 
-          {/* Cart + Mobile Toggle */}
+          {/* Cart + Mobile */}
           <div className="flex items-center gap-3">
             <button
               onClick={openCart}
-              className="relative flex items-center gap-2 px-4 py-2 bg-texas-orange/10 border border-texas-orange/30 rounded text-texas-cream hover:bg-texas-orange hover:border-texas-orange transition-all duration-200"
-              aria-label="Open cart"
+              className="relative p-2 text-s3h-cream hover:text-s3h-green-light transition-colors snipcart-checkout"
+              aria-label="Cart"
             >
-              <ShoppingCart size={18} />
-              <span className="hidden sm:block text-sm font-sans font-medium">Cart</span>
+              <ShoppingCart size={22} />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 bg-texas-orange text-texas-cream text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-s3h-green-light text-s3h-green-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
                   {totalItems}
                 </span>
               )}
             </button>
-
             <button
-              className="md:hidden text-texas-cream hover:text-texas-orange transition-colors"
+              className="md:hidden text-s3h-cream hover:text-s3h-green-light transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -84,7 +82,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden bg-texas-dark border-t border-texas-brown/40 px-4 py-4">
+        <div className="md:hidden bg-s3h-green-dark border-t border-s3h-green-mid/40 px-4 py-4">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) =>
               link.isRoute ? (
@@ -92,7 +90,7 @@ export default function Header() {
                   key={link.label}
                   to={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="px-3 py-3 text-sm font-sans font-medium text-texas-cream/80 hover:text-texas-orange transition-colors uppercase tracking-wider border-b border-texas-brown/20"
+                  className="px-3 py-3 text-sm font-sans font-medium text-s3h-cream/80 hover:text-s3h-green-light transition-colors uppercase tracking-wider border-b border-s3h-green-mid/20"
                 >
                   {link.label}
                 </Link>
@@ -101,7 +99,7 @@ export default function Header() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="px-3 py-3 text-sm font-sans font-medium text-texas-cream/80 hover:text-texas-orange transition-colors uppercase tracking-wider border-b border-texas-brown/20"
+                  className="px-3 py-3 text-sm font-sans font-medium text-s3h-cream/80 hover:text-s3h-green-light transition-colors uppercase tracking-wider border-b border-s3h-green-mid/20"
                 >
                   {link.label}
                 </a>
