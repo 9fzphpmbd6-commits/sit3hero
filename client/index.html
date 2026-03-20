@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
-
     <!-- Meta Pixel - Replace YOUR_PIXEL_ID with your actual pixel ID -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -23,19 +22,17 @@
       fbq('init', 'YOUR_PIXEL_ID');
       fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
-
     <!-- Snipcart -->
     <script>
       window.SnipcartSettings = {
         publicApiKey: 'MTM0YjE1MGYtY2FmZC00NTRiLTgxNDMtY2JmYmMzNzczMzI1NjM5MDkzNTE3MTIxNTU1MzMw',
         loadStrategy: 'on-user-interaction',
       };
-
       (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=function(y,g){var h=document.querySelector("head"),b=document.createElement("link");b.rel="stylesheet";b.type="text/css";b.href=y+"/"+g;h.prepend(b);return b};m(window.SnipcartSettings.protocol+"://"+window.SnipcartSettings.domain,"themes/v3.4.1/default/snipcart.css");var E=function(){var y=document.querySelector("#snipcart"),g=document.querySelector('script[src^="'+window.SnipcartSettings.protocol+"://"+window.SnipcartSettings.domain+'"][src$="snipcart.js"]');if(!y){y=document.createElement("div");y.id="snipcart";y.setAttribute("hidden","true");document.body.appendChild(y)}v(y);if(!g){g=document.createElement("script");g.src=window.SnipcartSettings.protocol+"://"+window.SnipcartSettings.domain+"/themes/v3.4.1/default/snipcart.js";g.async=!0;document.head.appendChild(g)}};window.SnipcartSettings.loadStrategy==="on-user-interaction"?["touchstart","scroll","keydown","click","mousemove"].forEach(function(y){document.addEventListener(y,function(){E()},{once:!0})}):E();function v(y){if(f){y.dataset.apiKey=window.SnipcartSettings.publicApiKey;if(window.SnipcartSettings.addProductBehavior)y.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior;if(window.SnipcartSettings.modalStyle)y.dataset.configModalStyle=window.SnipcartSettings.modalStyle;if(window.SnipcartSettings.currency)y.dataset.currency=window.SnipcartSettings.currency;if(window.SnipcartSettings.templatesUrl)y.dataset.templatesUrl=window.SnipcartSettings.templatesUrl}}})();
     </script>
   </head>
   <body>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
